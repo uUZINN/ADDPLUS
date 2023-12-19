@@ -7,7 +7,7 @@ const ScoreSide = () => {
                 <h2>ADD SCORE</h2>
                 <ul>
                     <li className='active'>
-                        <a href="/">성적 비교</a>
+                        <a href="/score">성적 비교</a>
                     </li>
                 </ul>
             </div>

@@ -13,7 +13,7 @@ const Score = () => {
 
                 <div className="score_cont">
                     <table>
-                        <tr>
+                        <tr className='score01'>
                             <td>비교 유형</td>
                             <th>
                                 <div className='check_wrap'>
@@ -30,7 +30,7 @@ const Score = () => {
                         </tr>
                         <tr>
                             <td>대학</td>
-                            <th>
+                            <th className='width100'>
                                 <div className="college_wrap">
                                     <input type="text" placeholder='대학명을 입력해주세요' />
                                     <LuSearch />
@@ -175,8 +175,8 @@ const Score = () => {
                                         <td>석차등급</td>
                                         <td></td>
                                     </tr>
-                                    <tr>
-                                        <th>1</th>
+                                    <tr className='score_mobile_list'>
+                                        <th className='no'>1</th>
                                         <th>
                                             <div className='score_select'>
                                                 <select name="" id="">
@@ -207,22 +207,22 @@ const Score = () => {
                                                 </select>
                                             </div>
                                         </th>
-                                        <th>
+                                        <th className='width100'>
                                             <div>
                                                 <input type='text' placeholder='년도' />
                                             </div>
                                         </th>
-                                        <th>
+                                        <th className='width100 m_w50'>
                                             <div>
-                                                <input className='input_num' style={{ width: "100%" }} type='text' />
+                                                <input className='input_num' style={{ width: "100%" }} type='text' placeholder='단위수' />
                                             </div>
                                         </th>
-                                        <th>
+                                        <th className='width100 m_w50'>
                                             <div>
-                                                <input className='input_num' style={{ width: "100%" }} type='text' />
+                                                <input className='input_num' style={{ width: "100%" }} type='text' placeholder='석차등급' />
                                             </div>
                                         </th>
-                                        <th>
+                                        <th className='width100 m_delete'>
                                             <button>삭제하기</button>
                                         </th>
                                     </tr>
