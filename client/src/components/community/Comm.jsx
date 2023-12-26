@@ -1,10 +1,12 @@
 import React from 'react'
 import CommSide from './CommSide'
 import { Link } from 'react-router-dom'
+import Header from '../layout/Header'
 
 const Comm = () => {
     return (
         <>
+            <Header />
             <div className="comm__Wrap">
                 <CommSide />
                 <div className='main'>

@@ -1,11 +1,12 @@
 import React from 'react'
+import Footer from '../layout/Footer'
 
 const Login = () => {
     return (
         <>
             <div id="login__Wrap">
                 <div className="login__header">
-                    <h1>로그인</h1>
+                    <h1>LOGIN</h1>
                     <p>로그인 후 <span>에드플러스</span>를 마음껏 활용하세요!</p>
                 </div>
                 <div className="login__main">
@@ -26,8 +27,7 @@ const Login = () => {
                                 <li>
                                     <a href="/">아이디 찾기</a>
                                 </li>
-                            </ul>
-                            <ul>
+                                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                                 <li>
                                     <a href="/find">비밀번호 찾기</a>
                                 </li>
@@ -48,6 +48,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

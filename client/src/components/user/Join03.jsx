@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../layout/Footer'
 
 const Join03 = () => {
     return (
@@ -73,6 +74,7 @@ const Join03 = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

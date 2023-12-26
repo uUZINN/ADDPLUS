@@ -6,13 +6,20 @@
         width: 15%;
         background-color: #F4F4F4;
         text-align: center;
-        border-right: 2px solid #D6D6D6;
+        border-right: 1px solid #D6D6D6;
+        position: sticky;
+        height: 100vh;
+        top: 0;
+
+        @media (max-width: 1250px) {
+            display: none;
+        }
 
         h2 {
             margin: 0 auto;
             width: 90%;
-            margin-top: 30px;
-            padding: 18px 10px 15px;
+            margin-top: 55px;
+            padding: 15px 10px 12px;
             background-color: var(--primary-color);
             font-size: 20px;
             border-radius: 7px;
@@ -26,7 +33,7 @@
 
             li {
                 text-align: left;
-                padding: 15px 30px 12px;
+                padding: 15px 20px 12px;
                 display: flex;
                 align-items: center;
 
@@ -92,13 +99,25 @@
     }
 
     .main {
-        padding: 3% 8%;
+        padding: 2.8% 10% 3%;
         width: 85%;
+
+        @media (max-width: 1500px) {
+            padding: 2.8% 3% 3%;
+            width: 85%;
+        }
+
+        @media (max-width: 1250px) {
+            padding: 2.8% 2% 3%;
+            width: 100%;
+            margin: 0 auto;
+        }
 
         .comm__top {
             display: flex;
             border-bottom: 1px solid #D6D6D6;
             justify-content: space-between;
+            align-items: flex-end;
 
             .comm_tab {
                 ul {
@@ -106,8 +125,8 @@
 
                     li {
                         cursor: pointer;
-                        padding: 12px 35px 10px;
-                        font-size: 20px;
+                        padding: 0.3rem 1.5rem;
+                        font-size: 1.17em;
                         margin-right: 10px;
                     }
 

@@ -12,10 +12,11 @@
         h1 {
             font-size: 50px;
             font-weight: 900;
+            font-family: var(--mainfont-Gmarket-bold);
         }
 
         p {
-            font-size: 22px;
+            font-size: 20px;
 
             span {
                 color: var(--primary-color);
@@ -46,15 +47,17 @@
                 font-size: 25px;
                 font-weight: 900;
                 color: #00e5957c;
+                font-family: var(--mainfont-Gmarket-bold);
             }
 
             div {
                 width: 100%;
                 height: 100%;
-                background-position: center center;
+                background-position: center right;
                 background-repeat: no-repeat;
                 position: absolute;
                 bottom: -15px;
+                right: 0px;
             }
 
             .card__01 {
@@ -77,6 +80,12 @@
         .join01__card:hover {
             cursor: pointer;
             background-color: #00ffa623;
+            border: 2px solid #00E594;
+
+            h3 {
+                color: #00E594;
+                transition: all 0.3s;
+            }
         }
     }
 
@@ -238,14 +247,16 @@
 
     .join02__header {
         width: 600px;
+        margin-bottom: 45px;
 
         h1 {
             font-size: 50px;
             font-weight: 900;
+            font-family: var(--mainfont-Gmarket-bold);
         }
 
         p {
-            font-size: 22px;
+            font-size: 20px;
 
             span {
                 color: var(--primary-color);
@@ -259,7 +270,7 @@
 
         .join02__up,
         .join02__down {
-            padding: 40px;
+            padding: 30px 40px;
             overflow-y: scroll;
             height: 300px;
             background-color: #F2F2F2;
@@ -269,14 +280,15 @@
 
             div {
                 display: flex;
-                margin-bottom: 30px;
                 align-items: center;
 
                 div {
-                    background-image: url(../../img/check.png);
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAECSURBVHgB7dY9DoIwGMbxp8Ywu7vADbwCJ2E2Tt4AT8BgjKN6EuIJOAIMGlYnB2Na28pCwkeB0un9DxCSt81vKASAoiiKoubvcdogv6y6RhZw3fN4BRMZvHeGPGnFuYUpFFj0fxB+16g7WA2lYjGC/attnMFFTaj17tC1ZH7YCJSewpyNROnJ3ony7IPzCJ/FDcG2gGkTUKr+wy94Ki8xPHnPJdIBygwGXt3l622Cs4Ayg7FvKD+IhRHOEkqvNJoqEx9imUIwv1pWyDMX1s6cRZQ5rA9nGTUM1oYDv9tGDYc14mrbWUHpnTCmRpw9lN4NY6vh7KKmp3Dqp4+iKIqiJvcDzWCAbyOMSh4AAAAASUVORK5CYII=);
                     width: 30px;
                     height: 30px;
                     margin-right: 5px;
+                    background-size: 100%;
+                    margin-bottom: 19px;
                 }
 
                 h2 {
@@ -295,6 +307,23 @@
                 white-space: pre-line;
             }
         }
+
+
+        .scroll__style::-webkit-scrollbar {
+            width: 10px;
+            background: none;
+        }
+
+        .scroll__style::-webkit-scrollbar-thumb {
+            height: 20%;
+            background: #D9D9D9;
+            border-radius: 5px;
+        }
+
+        .scroll__style::-webkit-scrollbar-track {
+            background: none;
+        }
+
 
         .join_02_box {
             display: flex;
@@ -474,10 +503,11 @@
         h1 {
             font-size: 50px;
             font-weight: 900;
+            font-family: var(--mainfont-Gmarket-bold);
         }
 
         p {
-            font-size: 22px;
+            font-size: 20px;
 
             span {
                 color: var(--primary-color);
@@ -719,6 +749,7 @@
         h1 {
             font-size: 50px;
             font-weight: 900;
+            font-family: var(--mainfont-Gmarket-bold);
         }
 
         p {

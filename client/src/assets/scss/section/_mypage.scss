@@ -1,0 +1,130 @@
+.mypage_wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .nav {
+        width: 15%;
+        background-color: #F4F4F4;
+        text-align: center;
+        border-right: 1px solid #D6D6D6;
+        position: sticky;
+        height: 100vh;
+        top: 0;
+
+        @media (max-width: 1250px) {
+            display: none;
+        }
+
+        h2 {
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 55px;
+            padding: 15px 10px 12px;
+            background-color: var(--primary-color);
+            font-size: 20px;
+            border-radius: 7px;
+            color: var(--white);
+            font-weight: 900;
+        }
+
+        ul {
+            margin-top: 30px;
+            background-color: var(--white);
+
+            li {
+                text-align: left;
+                padding: 15px 20px 12px;
+                display: flex;
+                align-items: center;
+
+                div {
+                    margin-right: 5px;
+                    margin-bottom: 3px;
+                    width: 20px;
+                    height: 20px;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+
+                a {
+                    color: #565656;
+                }
+            }
+
+            .active {
+                background-color: #D9F2E9;
+
+                a {
+                    color: var(--black);
+                }
+            }
+        }
+    }
+
+    .main {
+        background-color: #F4F4F4;
+        padding: 2.8% 10% 3%;
+        width: 85%;
+
+        @media (max-width: 1500px) {
+            padding: 2.8% 3% 3%;
+            width: 85%;
+        }
+
+        @media (max-width: 1250px) {
+            padding: 2.8% 2% 3%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
+        .mypage_score {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            >div {
+                width: 32%;
+                background-color: #fff;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem;
+                border-radius: 10px;
+
+                >div {
+                    h3 {
+                        color: #242424;
+                        font-size: 1.1rem;
+                        margin-bottom: 1.3rem;
+                    }
+
+                    p {
+                        display: flex;
+                        color: #989898;
+                        font-size: 0.9rem;
+
+                        img {
+                            width: 20px;
+                            margin-left: 0.5rem;
+                            margin-top: -0.2rem;
+                        }
+                    }
+
+                    em {
+                        font-family: var(--mainfont-Gmarket-bold);
+                        font-size: 3rem;
+                        color: #242424;
+                    }
+
+                    img {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../layout/Footer'
 
 const Find02 = () => {
     return (
@@ -28,6 +29,7 @@ const Find02 = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
