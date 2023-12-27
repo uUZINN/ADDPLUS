@@ -10,13 +10,16 @@ const MypageSide = () => {
                         <a href="/mypage">성적 관리</a>
                     </li>
                     <li>
-                        <a href="/">나의 활동</a>
+                        <a href="/mypageInput">성적 입력</a>
                     </li>
                     <li>
-                        <a href="/">대학교 인증</a>
+                        <a href="/mypageActive">나의 활동</a>
                     </li>
                     <li>
-                        <a href="/">포인트</a>
+                        <a href="/mypageCollege">대학교 인증</a>
+                    </li>
+                    <li>
+                        <a href="/mypagePoint">포인트</a>
                     </li>
                     <li>
                         <a href="/">회원 정보 수정</a>

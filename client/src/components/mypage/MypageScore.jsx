@@ -1,16 +1,19 @@
 import React from 'react'
 import Header from '../layout/Header'
 import MypageSide from './MypageSide'
+import MypageAll from './MypageAll'
+import MypageGrade from './MypageGrade'
+import MypageTest from './MypageTest'
 import up_score from '../../assets/img/mypage/up_score.png'
 import all_score from '../../assets/img/mypage/all_score.png'
 import down_score from '../../assets/img/mypage/down_score.png'
 import week_score from '../../assets/img/mypage/week_score.png'
 import now_score from '../../assets/img/mypage/now_score.png'
-
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-const mypageScore = () => {
+
+const mypageScore = ({ chartData }) => {
+
     return (
         <>
             <Header />
@@ -51,24 +54,23 @@ const mypageScore = () => {
                         </div>
                     </div>
 
-                    <Line
-                        datasetIdKey='id'
-                        data={{
-                            labels: ['Jun', 'Jul', 'Aug'],
-                            datasets: [
-                                {
-                                    id: 1,
-                                    label: '',
-                                    data: [5, 6, 7],
-                                },
-                                {
-                                    id: 2,
-                                    label: '',
-                                    data: [3, 2, 1],
-                                },
-                            ],
-                        }}
-                    />
+                    <div className='mypage_chart'>
+                        <div className='mypage_grade'>
+                            <h4>전체 학년 평균</h4>
+                            <MypageTest />
+                        </div>
+                        <div className='mypage_grade'>
+                            <h4>모의고사 평균</h4>
+                            <MypageGrade />
+                        </div>
+                    </div>
+
+                    <div className="mypage_chart_all">
+                        <div className="mypage_all">
+                            <h4>전체 평균 등급</h4>
+                            <MypageAll />
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

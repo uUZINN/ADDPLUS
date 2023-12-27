@@ -84,6 +84,14 @@
             display: flex;
             justify-content: space-between;
 
+            @media (max-width: 600px) {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
             >div {
                 width: 32%;
                 background-color: #fff;
@@ -93,6 +101,11 @@
                 align-items: center;
                 padding: 1.5rem;
                 border-radius: 10px;
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
 
                 >div {
                     h3 {
@@ -125,6 +138,331 @@
                 }
             }
         }
+
+        .mypage_chart {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.4rem;
+
+            @media (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .mypage_grade {
+                width: 49%;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 1.5rem;
+                border-radius: 10px;
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+
+                h4 {
+                    color: #242424;
+                    font-size: 1.1rem;
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+
+        .mypage_chart_all {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.4rem;
+
+            .mypage_all {
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 1.5rem;
+                border-radius: 10px;
+
+                h4 {
+                    color: #242424;
+                    font-size: 1.1rem;
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+
     }
 
+}
+
+.score__Wrap {
+    .main {
+        .score_cont {
+            table {
+                tr {
+                    th {
+                        table.score_list {
+                            tr {
+                                th {
+                                    .score_select.mypage_select {
+                                        width: 100%;
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.mypage_college_cont {
+    border-bottom: 1px solid #D6D6D6;
+    padding: 0 2.5rem 2rem;
+
+    h4 {
+        font-size: 1.05rem;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    ul {
+        margin-top: 0.5rem;
+        list-style: disc;
+
+        li {
+            color: #626262;
+            list-style: inside;
+            font-size: 0.95rem;
+            line-height: 1.8;
+
+            ul {
+                margin-top: 0;
+
+                li {
+                    padding-left: 1rem;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+
+.mypage_college_radio {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    padding: 0 2.5rem 1.5rem;
+
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 40px;
+        display: inline-block;
+        margin: 0;
+        cursor: pointer;
+        font-size: 1.05rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 20%;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+
+            &:checked~.checkmark {
+                border: 1px solid #00E594;
+                background: #fff;
+
+                &:after {
+                    display: block;
+                }
+            }
+        }
+
+        // &:hover input~.checkmark {
+        //     background-color: #fff;
+        // }
+
+        &:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00E594;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+        border-radius: 50%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        &:after {
+            top: 4px;
+            left: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #00E594;
+        }
+    }
+
+}
+
+.mypage_file {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0 2.5rem 2rem;
+
+    input {
+        border: 1px solid #D6D6D6;
+        border-radius: 8px;
+        color: #D6D6D6;
+        padding: 0.5rem;
+        width: 50%;
+    }
+
+    input[type=file]::file-selector-button {
+        margin-right: 20px;
+        padding: 8px 20px;
+        border: 0;
+        background-color: #EFEFEF;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #A9A9A9;
+        font-size: 0.9rem;
+        font-family: var(--mainfont-Gmarket-medium);
+    }
+
+    button {
+        margin-left: 0.5rem;
+        padding: 0 1.7rem;
+        border-radius: 8px;
+        background-color: #989898;
+        color: #fff;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}
+
+.mypage_point {
+    .point_top_btn {
+        text-align: right;
+        margin-bottom: 1.5rem;
+
+        button.guide_btn {
+            background-color: #ECECEC;
+            color: #858585;
+            padding: 0.7rem 1.5rem 0.6rem;
+            border-radius: 50px;
+        }
+
+        button.point_btn {
+            background-color: #D9F2E9;
+            color: #00C881;
+            padding: 0.7rem 1.5rem 0.6rem;
+            border-radius: 50px;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .point_payment {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        >div {
+            width: 24%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            border: 2px solid #00D187;
+            color: #00D187;
+            border-radius: 10px;
+            padding: 1.5rem;
+
+            img {
+                width: 55px;
+                margin-top: -0.5rem;
+            }
+
+            .point_tit {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+
+                em {
+                    font-family: var(--mainfont-Gmarket-bold);
+                    font-size: 2.5rem;
+                    margin-bottom: -0.8rem;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+
+        .point_total {
+            color: #fff;
+            background-color: #00D187;
+
+            img {
+                margin-top: -0.2rem;
+            }
+        }
+
+        .point_used {
+            color: #FF8970;
+            border: 2px solid #FF8970;
+
+            img {
+                margin-top: -0.2rem;
+            }
+        }
+    }
+}
+
+.score_title.point_title {
+    margin-top: 2rem;
 }

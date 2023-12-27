@@ -26,6 +26,10 @@ import MapDetail from './components/map/MapDetail.jsx'
 import Mapdepartment from './components/map/Mapdepartment.jsx'
 
 import MypageScore from './components/mypage/MypageScore.jsx'
+import MypageInput from './components/mypage/MypageInput.jsx'
+import MypageActive from './components/mypage/MypageActive.jsx'
+import MypageCollege from './components/mypage/MypageCollege.jsx'
+import MypagePoint from './components/mypage/MypagePoint.jsx'
 
 const App = () => {
   return (
@@ -44,6 +48,10 @@ const App = () => {
         <Route path='/score' element={<Score />}></Route>
 
         <Route path='/mypage' element={<MypageScore />}></Route>
+        <Route path='/mypageInput' element={<MypageInput />}></Route>
+        <Route path='/mypageActive' element={<MypageActive />}></Route>
+        <Route path='/mypageCollege' element={<MypageCollege />}></Route>
+        <Route path='/mypagePoint' element={<MypagePoint />}></Route>
 
         <Route path='/join01' element={<Join01 />}></Route>
         <Route path='/join02' element={<Join02 />}></Route>
