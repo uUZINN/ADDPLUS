@@ -17,10 +17,10 @@ const mypageScore = ({ chartData }) => {
     return (
         <>
             <Header />
-            <div className='mypage_wrap'>
+            <div className='mypage_Wrap'>
                 <MypageSide />
 
-                <div className='main'>
+                <div className='main main_color'>
                     <div className='mypage_score'>
                         <div className='mypage_all_score'>
                             <div className='all_score_title'>

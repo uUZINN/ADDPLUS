@@ -6,7 +6,7 @@ const MypageInput = () => {
     return (
         <>
             <Header />
-            <div className='score__Wrap'>
+            <div className='score__Wrap mypage_Wrap'>
                 <MypageSide />
 
                 <div className='main'>

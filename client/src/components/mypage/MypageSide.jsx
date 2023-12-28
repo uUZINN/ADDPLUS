@@ -20,6 +20,10 @@ const MypageSide = () => {
                     </li>
                     <li>
                         <a href="/mypagePoint">포인트</a>
+                        <ul>
+                            <li><a href="/mypagePoint">포인트 관리</a></li>
+                            <li><a href="/mypageDisplay">광고 걸기</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="/">회원 정보 수정</a>

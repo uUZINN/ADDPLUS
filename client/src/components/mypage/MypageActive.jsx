@@ -7,7 +7,7 @@ const MypageActive = () => {
     return (
         <>
             <Header />
-            <div className="comm__Wrap">
+            <div className="comm__Wrap mypage_Wrap">
                 <MypageSide />
                 <div className='main'>
                     <div className="comm__top">
