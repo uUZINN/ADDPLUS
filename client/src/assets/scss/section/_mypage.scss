@@ -1041,3 +1041,145 @@
         }
     }
 }
+
+.mypage_info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 6rem;
+
+    @media (max-width: 1200px) {
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 750px) {
+        padding: 4rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info_profile {
+        width: 30%;
+
+        @media (max-width: 750px) {
+            width: 50%;
+        }
+
+        .profile {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >img {
+                width: 80%;
+            }
+
+            button {
+                position: absolute;
+                background: none;
+                width: 70px;
+                height: 70px;
+                bottom: 0;
+                right: 10%;
+
+                @media (max-width: 1200px) {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        p {
+            font-size: 2rem;
+            font-family: var(--mainfont-Gmarket-light);
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+
+        button.profile_btn {
+            background-color: #F8F8F8;
+            border: 1px solid #E1E1E1;
+            border-radius: 6px;
+            width: 100%;
+            padding: 0.5rem 0 0.6rem;
+            font-size: 0.9rem;
+            color: #A4A4A4;
+        }
+    }
+
+    .info_cont {
+        width: 50%;
+
+        @media (max-width: 1200px) {
+            width: 60%;
+        }
+
+        @media (max-width: 750px) {
+            width: 100%;
+            margin-top: 3rem;
+        }
+
+        div {
+            label {
+                color: #5A5A5A;
+            }
+
+            >div {
+                input {
+                    border: 1px solid #C5C5C5;
+                    padding: 0.9rem 1rem 0.7rem;
+                    width: 100%;
+                    border-radius: 6px;
+                    margin-bottom: 2rem;
+                    margin-top: 0.3rem;
+
+                    &::placeholder {
+                        color: #C5C5C5;
+                    }
+                }
+            }
+        }
+
+        .info_modify_btn {
+            background-color: #00E594;
+            color: #fff;
+            padding: 0.9rem 1rem 0.7rem;
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .info_out_btn {
+            background-color: #F8F8F8;
+            color: #A4A4A4;
+            border: 1px solid #E1E1E1;
+            padding: 0.5rem 1rem 0.4rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            float: right;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.pop_btn {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    button {
+        width: 47%;
+    }
+
+    button.cancle_btn {
+        background-color: #A4A4A4 !important;
+    }
+}
