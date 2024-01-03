@@ -29,7 +29,7 @@ const MypageSide = () => {
                         <a href="/mypageMyinfo">회원 정보 수정</a>
                     </li>
                     <li>
-                        <a href="/">목표 대학 관리</a>
+                        <a href="/mypageTarget">목표 대학 관리</a>
                     </li>
                 </ul>
             </div>

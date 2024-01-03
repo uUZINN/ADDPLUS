@@ -32,6 +32,7 @@ import MypageCollege from './components/mypage/MypageCollege.jsx'
 import MypagePoint from './components/mypage/MypagePoint.jsx'
 import MypageDisplay from './components/mypage/MypageDisplay.jsx'
 import MypageMyinfo from './components/mypage/MypageMyinfo.jsx'
+import MypageTarget from './components/mypage/MypageTarget.jsx'
 
 const App = () => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
         <Route path='/mypagePoint' element={<MypagePoint />}></Route>
         <Route path='/mypageDisplay' element={<MypageDisplay />}></Route>
         <Route path='/mypageMyinfo' element={<MypageMyinfo />}></Route>
+        <Route path='/mypageTarget' element={<MypageTarget />}></Route>
 
         <Route path='/join01' element={<Join01 />}></Route>
         <Route path='/join02' element={<Join02 />}></Route>

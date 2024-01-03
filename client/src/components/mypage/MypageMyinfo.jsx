@@ -6,11 +6,15 @@ import camera from '../../assets/img/mypage/camera.png'
 
 const MypageMyinfo = () => {
 
-    const [isPwdOpen, setIsPwdOpen] = useState(false);
+    const [isPwdOpen, setIsPwdOpen] = useState(true);
 
     // const togglePwd = () => {
     //     setIsPwdOpen(!isPwdOpen);
     // };
+
+    const handleCancel = () => {
+        setIsPwdOpen(false);
+    };
 
     return (
         <>
@@ -75,19 +79,21 @@ const MypageMyinfo = () => {
                 </div>
             </div>
 
-            <div className="guide_popup">
-                <div className="popup_wrap">
-                    <div className="guide_cont">
-                        <h4>회원 정보 수정</h4>
-                        <p>회원 정보 수정을 위해 비밀번호를 입력해주세요.</p>
-                        <input type="password" placeholder='비밀번호를 입력해주세요' />
-                        <div className="pop_btn">
-                            <button className='cancle_btn'>취소</button>
-                            <button className='charge_btn'>확인</button>
+            {isPwdOpen && (
+                <div className="guide_popup">
+                    <div className="popup_wrap">
+                        <div className="guide_cont">
+                            <h4>회원 정보 수정</h4>
+                            <p className='pw_pop_desc'>회원 정보 수정을 위해 비밀번호를 입력해주세요.</p>
+                            <input className='pw_input' type="password" placeholder='비밀번호를 입력해주세요' />
+                            <div className="pop_btn pw_btn">
+                                <button className='cancle_btn' onClick={handleCancel}>취소</button>
+                                <button className='charge_btn'>확인</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            )}
         </>
     )
 }

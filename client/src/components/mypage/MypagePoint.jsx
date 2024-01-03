@@ -178,8 +178,8 @@ const MypagePoint = () => {
                                 </label>
                             </div>
                             <div className="pop_btn">
-                                <button className='cancle_btn' onClick={toggleCharge}>취소</button>
-                                <button className='charge_btn'>결제하기</button>
+                                <button className='cancle_btn' style={{ width: '48%' }} onClick={toggleCharge}>취소</button>
+                                <button className='charge_btn' style={{ width: '48%' }}>결제하기</button>
                             </div>
                         </div>
                     </div>
